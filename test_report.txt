@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (65 ms)
+  ✕ renders learn react link (63 ms)
 
   ● renders learn react link
 
@@ -78,40 +78,55 @@ FAIL src/App.test.tsx
                 [36m</div>[39m
               [36m</div>[39m
             [36m</nav>[39m
-            [36m<header>[39m
-              [36m<h1>[39m
-                [0mWelcome to My React Web Page![0m
-              [36m</h1>[39m
-            [36m</header>[39m
+            [36m<p />[39m
+            [36m<h1>[39m
+              [0mHome Page[0m
+            [36m</h1>[39m
+            [36m<p />[39m
             [36m<main>[39m
               [36m<div[39m
-                [33mclass[39m=[32m"page"[39m
+                [33mclass[39m=[32m"box"[39m
               [36m>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"container"[39m
+                [36m<p />[39m
+                [36m<h3>[39m
+                  [0mBasic Questions Page[0m
+                [36m</h3>[39m
+                [36m<p />[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"padding"[39m
                 [36m>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"box"[39m
-                  [36m>[39m
-                    [36m<button>[39m
-                      [0mButton 1[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"box"[39m
-                  [36m>[39m
-                    [36m<button>[39m
-                      [0mButton 2[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                [36m</div>[39m
+                  [0mThe basic questions page is designed to provide concise and straightforward answers to common inquiries about your career. Dive in to find quick insights about your interests and career.[0m
+                [36m</p>[39m
+                [36m<p />[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mBasic Questions Page[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"box"[39m
+              [36m>[39m
+                [36m<p />[39m
+                [36m<h3>[39m
+                  [0mDetailed Questions Page[0m
+                [36m</h3>[39m
+                [36m<p />[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"padding"[39m
+                [36m>[39m
+                  [0mThe detailed questions page offers in-depth explanations to questions you have about your career pathway. Each response is  crafted to provide thorough explanations.[0m
+                [36m</p>[39m
+                [36m<p />[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mDetailed Questions Page[0m
+                [36m</button>[39m
               [36m</div>[39m
             [36m</main>[39m
-            [36m<footer>[39m
-              [36m<p>[39m
-                [0mFooter content goes here.[0m
-              [36m</p>[39m
-            [36m</footer>[39m
           [36m</div>[39m
           [36m<form[39m
             [33mclass[39m=[32m""[39m
@@ -173,7 +188,7 @@ All files                   |      24 |    21.42 |   17.64 |      24 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.939 s
+Time:        2.907 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
