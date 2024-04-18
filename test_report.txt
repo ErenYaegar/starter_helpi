@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (65 ms)
+  ✕ renders learn react link (70 ms)
 
   ● renders learn react link
 
@@ -174,21 +174,21 @@ FAIL src/App.test.tsx
 ----------------------------|---------|----------|---------|---------|-------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------|---------|----------|---------|---------|-------------------
-All files                   |   27.58 |    27.77 |   15.78 |   27.58 |                   
+All files                   |   23.52 |    22.72 |   13.04 |   23.52 |                   
  src                        |   28.57 |    16.66 |      20 |   28.57 |                   
   App.tsx                   |      60 |       50 |   33.33 |      60 | 18,26-32          
   index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
   reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
- src/components             |   27.02 |    33.33 |   14.28 |   27.02 |                   
-  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 7-29              
+ src/components             |   21.27 |       25 |   11.11 |   21.27 |                   
+  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 9-61              
   Buttons.tsx               |   55.55 |       50 |   33.33 |   55.55 | 38,42,56-57       
-  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 7-27              
+  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 10-58             
   Home.tsx                  |   55.55 |       50 |   33.33 |   55.55 | 15,19,40-51       
 ----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.789 s
+Time:        3.031 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
