@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (70 ms)
+  ✕ renders learn react link (83 ms)
 
   ● renders learn react link
 
@@ -79,11 +79,15 @@ FAIL src/App.test.tsx
               [36m</div>[39m
             [36m</nav>[39m
             [36m<p />[39m
-            [36m<h1>[39m
+            [36m<h1[39m
+              [33mclass[39m=[32m"padding3"[39m
+            [36m>[39m
               [0mHome Page[0m
             [36m</h1>[39m
             [36m<p />[39m
-            [36m<main>[39m
+            [36m<main[39m
+              [33mclass[39m=[32m"padding2"[39m
+            [36m>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"box"[39m
               [36m>[39m
@@ -99,7 +103,7 @@ FAIL src/App.test.tsx
                 [36m</p>[39m
                 [36m<p />[39m
                 [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mclass[39m=[32m"MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-cua13l-JoyButton-root"[39m
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
                   [0mBasic Questions Page[0m
@@ -120,7 +124,7 @@ FAIL src/App.test.tsx
                 [36m</p>[39m
                 [36m<p />[39m
                 [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mclass[39m=[32m"MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-cua13l-JoyButton-root"[39m
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
                   [0mDetailed Questions Page[0m
@@ -143,7 +147,7 @@ FAIL src/App.test.tsx
             [36m/>[39m
             [36m<br />[39m
             [36m<button[39m
-              [33mclass[39m=[32m"Submit-Button btn btn-primary"[39m
+              [33mclass[39m=[32m"MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd Submit-Button css-cua13l-JoyButton-root"[39m
               [33mtype[39m=[32m"button"[39m
             [36m>[39m
               [0mSubmit[0m
@@ -171,25 +175,6 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
-----------------------------|---------|----------|---------|---------|-------------------
-File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------------------|---------|----------|---------|---------|-------------------
-All files                   |   23.52 |    22.72 |   13.04 |   23.52 |                   
- src                        |   28.57 |    16.66 |      20 |   28.57 |                   
-  App.tsx                   |      60 |       50 |   33.33 |      60 | 18,26-32          
-  index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
-  reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
- src/components             |   21.27 |       25 |   11.11 |   21.27 |                   
-  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 9-61              
-  Buttons.tsx               |   55.55 |       50 |   33.33 |   55.55 | 38,42,56-57       
-  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 10-58             
-  Home.tsx                  |   55.55 |       50 |   33.33 |   55.55 | 15,19,40-51       
-----------------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 total
-Snapshots:   0 total
-Time:        3.031 s
-Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
 declaring it in its dependencies. This is currently working because
@@ -202,3 +187,22 @@ ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
 your devDependencies to work around this error. This will make this message
 go away.[0m
   
+----------------------------|---------|----------|---------|---------|-------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------------|---------|----------|---------|---------|-------------------
+All files                   |   24.24 |    22.72 |   14.28 |   24.24 |                   
+ src                        |   28.57 |    16.66 |      20 |   28.57 |                   
+  App.tsx                   |      60 |       50 |   33.33 |      60 | 19,27-33          
+  index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
+  reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
+ src/components             |   22.22 |       25 |    12.5 |   22.22 |                   
+  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 10-63             
+  Buttons.tsx               |   55.55 |       50 |   33.33 |   55.55 | 38,42,56-57       
+  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 12-59             
+  Home.tsx                  |   55.55 |       50 |   33.33 |   55.55 | 15,19,40-51       
+----------------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        3.331 s
+Ran all test suites.
