@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (83 ms)
+  ✕ renders learn react link (78 ms)
 
   ● renders learn react link
 
@@ -175,6 +175,25 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
+----------------------------|---------|----------|---------|---------|-------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------------|---------|----------|---------|---------|-------------------
+All files                   |   21.91 |    20.83 |   13.04 |   21.91 |                   
+ src                        |   28.57 |    16.66 |      20 |   28.57 |                   
+  App.tsx                   |      60 |       50 |   33.33 |      60 | 19,27-33          
+  index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
+  reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
+ src/components             |   19.23 |    22.22 |   11.11 |   19.23 |                   
+  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 8-120             
+  Buttons.tsx               |   55.55 |       50 |   33.33 |   55.55 | 38,42,56-57       
+  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 12-59             
+  Home.tsx                  |   55.55 |       50 |   33.33 |   55.55 | 15,19,40-51       
+----------------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        3.206 s
+Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
 declaring it in its dependencies. This is currently working because
@@ -187,22 +206,3 @@ ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
 your devDependencies to work around this error. This will make this message
 go away.[0m
   
-----------------------------|---------|----------|---------|---------|-------------------
-File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------------------|---------|----------|---------|---------|-------------------
-All files                   |   24.24 |    22.72 |   14.28 |   24.24 |                   
- src                        |   28.57 |    16.66 |      20 |   28.57 |                   
-  App.tsx                   |      60 |       50 |   33.33 |      60 | 19,27-33          
-  index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
-  reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
- src/components             |   22.22 |       25 |    12.5 |   22.22 |                   
-  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 10-63             
-  Buttons.tsx               |   55.55 |       50 |   33.33 |   55.55 | 38,42,56-57       
-  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 12-59             
-  Home.tsx                  |   55.55 |       50 |   33.33 |   55.55 | 15,19,40-51       
-----------------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 total
-Snapshots:   0 total
-Time:        3.331 s
-Ran all test suites.
