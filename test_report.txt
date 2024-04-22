@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (92 ms)
+  ✕ renders learn react link (79 ms)
 
   ● renders learn react link
 
@@ -103,14 +103,10 @@ FAIL src/App.test.tsx
                 [36m</p>[39m
                 [36m<p />[39m
                 [36m<button[39m
-                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-112jqhv-MuiButtonBase-root-MuiButton-root"[39m
-                  [33mtabindex[39m=[32m"0"[39m
+                  [33mclass[39m=[32m"MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-gs6if9-JoyButton-root"[39m
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
-                  [0mBasic Questions Page[0m
-                  [36m<span[39m
-                    [33mclass[39m=[32m"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"[39m
-                  [36m/>[39m
+                  [0mBASIC QUESTIONS PAGE[0m
                 [36m</button>[39m
               [36m</div>[39m
               [36m<div[39m
@@ -128,14 +124,10 @@ FAIL src/App.test.tsx
                 [36m</p>[39m
                 [36m<p />[39m
                 [36m<button[39m
-                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-112jqhv-MuiButtonBase-root-MuiButton-root"[39m
-                  [33mtabindex[39m=[32m"0"[39m
+                  [33mclass[39m=[32m"MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-gs6if9-JoyButton-root"[39m
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
-                  [0mDetailed Questions Page[0m
-                  [36m<span[39m
-                    [33mclass[39m=[32m"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"[39m
-                  [36m/>[39m
+                  [0mDETAILED QUESTIONS PAGE[0m
                 [36m</button>[39m
               [36m</div>[39m
             [36m</main>[39m
@@ -198,20 +190,20 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------|---------|----------|---------|---------|-------------------
-All files                   |   16.81 |     6.84 |    12.9 |   16.81 |                   
+All files                   |   15.51 |     7.57 |   12.12 |   15.51 |                   
  src                        |   28.57 |    16.66 |      20 |   28.57 |                   
   App.tsx                   |      60 |       50 |   33.33 |      60 | 16,24-30          
   index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
   reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
- src/components             |   14.13 |     5.97 |   11.53 |   14.13 |                   
-  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 13-214            
+ src/components             |   12.63 |     6.66 |   10.71 |   12.63 |                   
+  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 14-245            
   Buttons.tsx               |   55.55 |       50 |   33.33 |   55.55 | 38,42,56-57       
   DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 16-248            
-  Home.tsx                  |   66.66 |       50 |      50 |   66.66 | 57,61,84-101      
+  Home.tsx                  |   63.63 |       50 |      50 |   63.63 | 33,37,60-77       
   ProgressBar.tsx           |       0 |      100 |       0 |       0 | 4                 
 ----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.675 s
+Time:        3.609 s
 Ran all test suites.
