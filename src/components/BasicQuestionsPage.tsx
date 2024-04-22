@@ -90,7 +90,7 @@ export function BasicQuestionsPage(): JSX.Element {
         {
 			questionText: 'Question 6',
 			answerOptions: [
-				{ answerText: 'Option 1' },
+				{ answerText: 'Option skibidi' },
 				{ answerText: 'Option 2' },
 				{ answerText: 'Option 3' },
 				{ answerText: 'Option 4' },
