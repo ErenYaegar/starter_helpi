@@ -30,7 +30,7 @@ export function BasicQuestionsPage(): JSX.Element {
   ${({ theme }) => `
   cursor: pointer;
   background-color: #51bc51;
-  color: #FFF;
+  color: #FFF; 
   transition: ${theme.transitions.create(['background-color', 'transform'], {
     duration: theme.transitions.duration.standard,
   })};
@@ -43,7 +43,7 @@ export function BasicQuestionsPage(): JSX.Element {
 
     const questions = [
 		{
-			questionText: 'Question 1',
+			questionText: 'How do you prefer to spend your spare time?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -52,7 +52,7 @@ export function BasicQuestionsPage(): JSX.Element {
 			],
 		},
 		{
-			questionText: 'Question 2',
+			questionText: 'Choose a school subject you excelled in or enjoyed the most',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -61,7 +61,7 @@ export function BasicQuestionsPage(): JSX.Element {
 			],
 		},
 		{
-			questionText: 'Question 3',
+			questionText: 'What kind of problems do you enjoy solving?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -70,7 +70,7 @@ export function BasicQuestionsPage(): JSX.Element {
 			],
 		},
 		{
-			questionText: 'Question 4',
+			questionText: 'Which type of work environment do you prefer?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -79,7 +79,7 @@ export function BasicQuestionsPage(): JSX.Element {
 			],
 		},
         {
-			questionText: 'Question 5',
+			questionText: 'How do you prefer to contribute to a team?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -88,7 +88,7 @@ export function BasicQuestionsPage(): JSX.Element {
 			],
 		},
         {
-			questionText: 'Question 6',
+			questionText: 'What motivates you the most in a job?',
 			answerOptions: [
 				{ answerText: 'Option skibidi' },
 				{ answerText: 'Option 2' },
@@ -97,7 +97,7 @@ export function BasicQuestionsPage(): JSX.Element {
 			],
 		},
         {
-			questionText: 'Question 7',
+			questionText: 'What role do you naturally find yourself taking in group settings?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
