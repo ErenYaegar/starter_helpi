@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (92 ms)
+  ✕ renders learn react link (85 ms)
 
   ● renders learn react link
 
@@ -207,20 +207,20 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------|---------|----------|---------|---------|-------------------
-All files                   |      12 |     6.25 |   10.52 |   12.08 |                   
+All files                   |   11.46 |     5.55 |    9.75 |   11.53 |                   
  src                        |   28.57 |    16.66 |      20 |   28.57 |                   
   App.tsx                   |      60 |       50 |   33.33 |      60 | 16,24-30          
   index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
   reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
- src/components             |     9.3 |      5.4 |    9.09 |    9.37 |                   
-  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 20-208            
+ src/components             |    8.82 |     4.76 |    8.33 |    8.88 |                   
+  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 19-209            
   Buttons.tsx               |   55.55 |       50 |   33.33 |   55.55 | 38,42,56-57       
-  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 20-204            
+  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 23-286            
   Home.tsx                  |   63.63 |       50 |      50 |   63.63 | 33,37,60-77       
   ProgressBar.tsx           |       0 |      100 |       0 |       0 | 4                 
 ----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.841 s
+Time:        4.469 s
 Ran all test suites.
