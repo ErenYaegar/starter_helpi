@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
+import { Container, Nav, NavDropdown, Navbar, ProgressBar } from 'react-bootstrap';
 import { Navigate } from 'react-router-dom';
 import axios from 'axios';
 import Button from '@mui/joy/Button';
@@ -172,64 +172,66 @@ export function BasicQuestionsPage(): JSX.Element {
 
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="/">CareerFinder4U</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link onClick={handleGoToHomePage}>Home</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      <h1 className='padding3'>Basic Questions Page</h1>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
-      <Card variant="plain" sx={{ width: 600, height: 'auto' }}>
-        <CardContent>
-          {!displayFinalResults ? (
-            <>
-              {}
-              <Typography level="title-md">Question {currentQuestion + 1} of {questions.length}</Typography>
-              <Typography>{questions[currentQuestion].questionText}</Typography>
-              {questions[currentQuestion].answerOptions.map((option, index) => (
-                <StyledButton 
-                  key={index} 
-                  onClick={() => handleAnswerOptionClick(option.answerText)} 
-                  style={{ 
-                    margin: '10px',
-                    backgroundColor: selectedAnswers[currentQuestion] === option.answerText ? '#ab47bc' : '#ce93d8',
-                  }}
-                >
-                  {option.answerText}
-                </StyledButton>
-              ))}
-              {currentQuestion > 0 && (
-                <StyledButton onClick={handlePreviousQuestion}>Previous Question</StyledButton>
-              )}
-              {}
-              {currentQuestion === questions.length - 1 && (
-                <StyledButton onClick={handleGetAnswers}>Finish & Get Results</StyledButton>
-              )}
-            </>
-          ) : (
-            <>
-              <Typography level="h4">AI Generated Summary:</Typography>
-              <Typography>{gptResponse}</Typography>
-              {}
-              <StyledButton onClick={handleGoToHomePage}>Home</StyledButton>
-            </>
-          )}
-        </CardContent>
-      </Card>
-    </div>
+  <Navbar expand="lg" className="bg-body-tertiary">
+    <Container>
+      <Navbar.Brand href="/">CareerFinder4U</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link onClick={handleGoToHomePage}>Home</Nav.Link>
+          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+  <h1 className='padding3'>Basic Questions Page</h1>
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
+    <Card variant="plain" sx={{ width: 600, height: 'auto' }}>
+      <CardContent>
+        {!displayFinalResults ? (
+          <>
+            <Typography level="title-md">Question {currentQuestion + 1} of {questions.length}</Typography>
+            <ProgressBar
+              now={(currentQuestion + 1) * (100 / questions.length)}
+              striped variant="info"
+              style={{ margin: '20px 0', width: '100%' }}
+            />
+            <Typography>{questions[currentQuestion].questionText}</Typography>
+            {questions[currentQuestion].answerOptions.map((option, index) => (
+              <StyledButton 
+                key={index} 
+                onClick={() => handleAnswerOptionClick(option.answerText)} 
+                style={{ 
+                  margin: '10px',
+                  backgroundColor: selectedAnswers[currentQuestion] === option.answerText ? '#ab47bc' : '#ce93d8',
+                }}
+              >
+                {option.answerText}
+              </StyledButton>
+            ))}
+            {currentQuestion > 0 && (
+              <StyledButton onClick={handlePreviousQuestion}>Previous Question</StyledButton>
+            )}
+            {currentQuestion === questions.length - 1 && (
+              <StyledButton onClick={handleGetAnswers}>Finish & Get Results</StyledButton>
+            )}
+          </>
+        ) : (
+          <>
+            <Typography level="h4">AI Generated Summary:</Typography>
+            <Typography>{gptResponse}</Typography>
+            <StyledButton onClick={handleGoToHomePage}>Home</StyledButton>
+          </>
+        )}
+      </CardContent>
+    </Card>
   </div>
-);
-          }
+</div>
+  )
+        }

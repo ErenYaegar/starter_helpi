@@ -119,18 +119,21 @@ export function DetailedQuestionsPage(): JSX.Element {
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
 
     const handleCurrentQuestion = () => {
+        if (inputText.trim() === "") {
+            return; // Prevent moving forward if input is empty or only contains spaces
+        }
         const currentQuestionIndex = currentQuestion + 1;
-
-            if (currentQuestionIndex < questions.length) {
-                setCurrentQuestion(currentQuestionIndex)
-            }
     
-            if (currentQuestionIndex === questions.length - 1) {
-                setDisplayFinishButton(true);
-            }
+        if (currentQuestionIndex < questions.length) {
+            setCurrentQuestion(currentQuestionIndex);
+        }
     
-    }
-
+        if (currentQuestionIndex === questions.length - 1) {
+            setDisplayFinishButton(true);
+        }
+        setInputText(""); // Clear input text when moving to the next question
+    };
+    
     const handlePreviousQuestion = () => {
         const previousQuestionIndex = currentQuestion - 1;
     
@@ -164,6 +167,7 @@ export function DetailedQuestionsPage(): JSX.Element {
     if (goToBasicQuestionsPage) {
         return <Navigate to="/BasicQuestionsPage"/>
     }
+    
 
     return (
         <div>
