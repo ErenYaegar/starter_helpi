@@ -38,16 +38,19 @@ function App() {
           <Route path="/DetailedQuestionsPage" element={<DetailedQuestionsPage />}/>
         </Routes>
       </HashRouter>
-      {/*<header className="App-header">
-        
-      
-  </header>*/}
-      <Form>
-        <Form.Label>API Key:</Form.Label>
-        <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
-        <br></br>
-        <Button className="Submit-Button" onClick={handleSubmit}>Submit</Button>
-      </Form>
+      {/* Footer with API key input field */}
+      <footer style={{ backgroundColor: '#f3e5f5', padding: '10px', position: 'fixed', bottom: '0', width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ flex: '1', textAlign: 'left', marginLeft: '10px', fontSize: '12px'}}>
+          <p>© 2024 CareerFinder4U. All rights reserved.</p>
+        </div>
+        <div style={{ flex: '1', textAlign: 'right', fontSize: '12px' }}>
+          <Form>
+            <Form.Label style={{ display: 'inline-block', marginRight: '5px', fontSize: '12px' }}>API Key:</Form.Label>
+            <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey} style={{ display: 'inline-block', marginRight: '5px', width: '150px', height: '30px', fontSize: '12px' }} />
+            <Button className="Submit-Button" onClick={handleSubmit} style={{ fontSize: '12px' }}>Submit</Button>
+          </Form>
+        </div>
+      </footer>
     </div>
   );
 }
