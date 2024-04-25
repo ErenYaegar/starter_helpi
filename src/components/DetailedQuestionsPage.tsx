@@ -45,7 +45,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 
     const questions = [
 		{
-			questionText: 'Question 1',
+			questionText: 'What are you particularly good at?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -54,7 +54,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
 		{
-			questionText: 'Question 2',
+			questionText: 'What are you most passionate about?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -63,7 +63,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
 		{
-			questionText: 'Question 3',
+			questionText: 'What would make my life feel the most meaningful?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -72,7 +72,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
 		{
-			questionText: 'Question 4',
+			questionText: 'What kind of impact would I want to have on the world with my work?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -81,7 +81,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
         {
-			questionText: 'Question 5',
+			questionText: 'What do I enjoy most in life? What do I enjoy so much that I lose track of time?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -90,7 +90,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
         {
-			questionText: 'Question 6',
+			questionText: 'What fields am I most interested in? (doesnt have to be related to school.)',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -99,7 +99,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
         {
-			questionText: 'Question 7',
+			questionText: 'How can I add value to the marketplace? With what skills?',
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -199,23 +199,23 @@ export function DetailedQuestionsPage(): JSX.Element {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                height: '40vh', // Adjust this value according to your layout
+                height: '40vh', 
                 padding: '30vh'
             }}>
                 
-                <Card variant="plain" sx={{ width: 1000, height: 400}}// Adjust this value according to your layout
+                <Card variant="plain" sx={{ width: 1000, height: 400}}
                 >
                     <CardContent>
                         {!displayFinalResults && <Typography level="title-md">Question {currentQuestion+1}/{questions.length}</Typography>}
                         {!displayFinalResults && <ProgressBar
-                            min={0} // Minimum value progress can begin from
-                            now={(currentQuestion + 1) * (100 / questions.length)} // Current value of progress
-                            max={100} // Maximum value progress can reach
-                            label={`${Math.round(((currentQuestion + 1) * (100 / questions.length)))}%`} // Show label that represents visual percentage
-                            visuallyHidden={true} // Show the label visually
-                            striped={currentQuestion >= 0} // Uses a gradient to create a striped effect when the progress is at least 0%
-                            animated={currentQuestion >= 0} // Animate the stripes from right to left when the progress is at least 0%
-                            variant="info" // Sets the background class of the progress bar to red
+                            min={0} 
+                            now={(currentQuestion + 1) * (100 / questions.length)}
+                            max={100} 
+                            label={`${Math.round(((currentQuestion + 1) * (100 / questions.length)))}%`} 
+                            visuallyHidden={true} 
+                            striped={currentQuestion >= 0} 
+                            animated={currentQuestion >= 0}
+                            variant="info" 
                             style={{ width: '100%'}}
                             >
                         </ProgressBar>}
@@ -253,7 +253,7 @@ export function DetailedQuestionsPage(): JSX.Element {
                         
                         </div>}
 
-                        {/* Next and Previous buttons */}
+                        {}
                         {!displayFinishButton && !displayFinalResults && (
                             <div style={{ padding: '8vh', display: 'flex', justifyContent: 'center' }}>
                             {currentQuestion > 0 && (<StyledButton onClick={handlePreviousQuestion} style={{ margin: '0 auto' }}>Previous Question</StyledButton>)}
@@ -263,7 +263,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 
                         {displayFinalResults && <div>Final Results!</div>}
 
-                        {/* Finish and Previous buttons */}
+                        {}
                         {displayFinishButton && !displayFinalResults && (
                             <div style={{ padding: '8vh', display: 'flex', justifyContent: 'center' }}>
                             <StyledButton onClick={handlePreviousQuestion} style={{ margin: '0 auto' }}>Previous Question</StyledButton>
