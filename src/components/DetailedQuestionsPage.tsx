@@ -8,17 +8,10 @@ import Typography from '@mui/joy/Typography';
 import Input from '@mui/joy/Input';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import { styled } from '@mui/material/styles';
-import FormControl from '@mui/joy/FormControl';
-
-import FormHelperText from '@mui/joy/FormHelperText';
-import InfoOutlined from '@mui/icons-material/InfoOutlined';
-import { Grow } from '@mui/material';
 
 
 export function DetailedQuestionsPage(): JSX.Element {
-    interface Responses {
-        [key: number]: string
-    }
+  
 
     const StyledButton = styled(Button)`
     ${({ theme }) => `
@@ -50,13 +43,9 @@ export function DetailedQuestionsPage(): JSX.Element {
     `}
   `;
 
-    const questions = React.useMemo(() => [
+    const questions = [
 		{
-<<<<<<< HEAD
 			questionText: 'What are you particularly good at?',
-=======
-			id: 1,
->>>>>>> origin
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -65,11 +54,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
 		{
-<<<<<<< HEAD
 			questionText: 'What are you most passionate about?',
-=======
-			id: 2,
->>>>>>> origin
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -78,11 +63,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
 		{
-<<<<<<< HEAD
 			questionText: 'What would make my life feel the most meaningful?',
-=======
-			id: 3,
->>>>>>> origin
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -91,11 +72,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
 		{
-<<<<<<< HEAD
 			questionText: 'What kind of impact would I want to have on the world with my work?',
-=======
-			id: 4,
->>>>>>> origin
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -104,11 +81,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
         {
-<<<<<<< HEAD
 			questionText: 'What do I enjoy most in life? What do I enjoy so much that I lose track of time?',
-=======
-			id: 5,
->>>>>>> origin
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -117,11 +90,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
         {
-<<<<<<< HEAD
 			questionText: 'What fields am I most interested in? (doesnt have to be related to school.)',
-=======
-			id: 6,
->>>>>>> origin
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -130,11 +99,7 @@ export function DetailedQuestionsPage(): JSX.Element {
 			],
 		},
         {
-<<<<<<< HEAD
 			questionText: 'How can I add value to the marketplace? With what skills?',
-=======
-			id: 7,
->>>>>>> origin
 			answerOptions: [
 				{ answerText: 'Option 1' },
 				{ answerText: 'Option 2' },
@@ -142,36 +107,18 @@ export function DetailedQuestionsPage(): JSX.Element {
 				{ answerText: 'Option 4' },
 			],
 		}
-	], []);    
+	];    
 
     const [goToHomePage, setGoToHomePage] = React.useState(false);
     const [inputText, setInputText] = React.useState("");
     const [goToBasicQuestionsPage, setGoToBasicQuestionsPage] = React.useState(false);
     const [displayFinishButton, setDisplayFinishButton] = React.useState(false);
     const [displayFinalResults, setDisplayFinalResults] = React.useState(false);
+
+
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
-    const [responses, setResponses] = React.useState<Responses>({});
-    const [checked, setChecked] = React.useState(false);
-    
-    const [inputClicked, setInputClicked] = React.useState(false);
-    const [inputFocused, setInputFocused] = React.useState(false);
-
-
-    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      setInputText(e.target.value);
-      const { value } = e.target;
-      setResponses({ ...responses, [questions[currentQuestion].id]: value });
-    };
-
-    React.useEffect(() => {
-        setInputText(responses[questions[currentQuestion]?.id] || ""); // Set input text based on previous response or an empty string
-    }, [currentQuestion, questions, responses]);
-      
 
     const handleCurrentQuestion = () => {
-        setInputText("");
-        setInputClicked(false); 
-        setInputFocused(false);
         const currentQuestionIndex = currentQuestion + 1;
 
             if (currentQuestionIndex < questions.length) {
@@ -185,7 +132,6 @@ export function DetailedQuestionsPage(): JSX.Element {
     }
 
     const handlePreviousQuestion = () => {
-        setInputText("");
         const previousQuestionIndex = currentQuestion - 1;
     
         if (previousQuestionIndex >= 0) {
@@ -198,24 +144,14 @@ export function DetailedQuestionsPage(): JSX.Element {
     };
 
     const handleDisplayFinalResults = () => {
-        setChecked(true);
         setDisplayFinalResults(true);
         setDisplayFinishButton(false);
     }
 
-    const handleRetakeTest = () => {
-        setCurrentQuestion(0); // Reset current question to start from the beginning
-        setDisplayFinalResults(false); // Hide final results
-        setInputText(""); // Clear input text if any
-        // Reset any other state variables as needed
-        setResponses({});
-        setChecked(false);
-    };
-
     const handleClearText = () => {
         setInputText("");
-        setResponses({...responses, [questions[currentQuestion].id]: ""})
     };
+
 
     const handleGoToHomePage = () => {
         setGoToHomePage(true);
@@ -258,7 +194,6 @@ export function DetailedQuestionsPage(): JSX.Element {
             <h1 className='padding3'>Detailed Questions Page</h1>
             <p className="text-muted">The detailed career assessment goes in depth to plan out your professional preferences, skills, and motivators. Completing this assessment will provide you with a complex overview of career paths that align with your detailed profile. Coming soon.  </p>
             
-            <main className="padding2">
             <div
                 style={{
                 display: 'flex',
@@ -285,7 +220,7 @@ export function DetailedQuestionsPage(): JSX.Element {
                             >
                         </ProgressBar>}
                         <Typography style={{alignItems: 'center', padding: '5vh'}}>{!displayFinalResults && <div>
-                        <p>{questions[currentQuestion].id}</p>
+                        <p>{questions[currentQuestion].questionText}</p>
                         <div style={{paddingBottom: '1vh', display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center'}}>
@@ -294,7 +229,6 @@ export function DetailedQuestionsPage(): JSX.Element {
                             value={inputText}
                             onChange={(e) => setInputText(e.target.value)}
                         />*/}
-                            <FormControl error={inputText==='' && inputClicked && !inputFocused}>
                             <Input sx={{width: '500px', height: '75px', display: 'flex',
                                     justifyContent: 'center',
 
@@ -309,30 +243,11 @@ export function DetailedQuestionsPage(): JSX.Element {
                                       borderColor: '#86b7fe',
                                     }}} 
                                     variant="outlined" placeholder="Type in here…" value={inputText} 
-                                    onClick={() => setInputClicked(true)}
-                                    onFocus={() => setInputFocused(true)}
-                                    onBlur={() => setInputFocused(false)}
-                                    onChange={handleInputChange}
+                                    required
+                                    onChange={(e) => {
+                                    setInputText(e.target.value);
                                     
-
-                                    //error
-                                    error={inputText==='' && inputClicked && !inputFocused}
-                                    
-                                    
-                                    />
-                                    {inputText === '' && inputClicked && !inputFocused && (
-                                        <FormHelperText>
-                                            <InfoOutlined/>
-                                            Please enter an answer.
-                                        </FormHelperText>
-                                    )}
-                                   
-                                </FormControl>
-                                {/*<p>{questions[currentQuestion].id}</p>
-                                <p>:</p>
-                                <p>{responses[questions[currentQuestion].id]}</p>*/}
-                                {/*<p>{inputText}</p>*/}
-                                
+                        }} />
                         </div>
                         <div style={{paddingTop: '1vh'}}><StyledButton onClick={handleClearText}>Reset</StyledButton></div>
                         
@@ -340,25 +255,13 @@ export function DetailedQuestionsPage(): JSX.Element {
 
                         {}
                         {!displayFinishButton && !displayFinalResults && (
-                            <div style={{ padding: '6vh', display: 'flex', justifyContent: 'center' }}>
+                            <div style={{ padding: '8vh', display: 'flex', justifyContent: 'center' }}>
                             {currentQuestion > 0 && (<StyledButton onClick={handlePreviousQuestion} style={{ margin: '0 auto' }}>Previous Question</StyledButton>)}
-                            <StyledButton onClick={handleCurrentQuestion} style={{ margin: '0 auto' }} disabled={inputText === ''}>Next Question</StyledButton>
+                            <StyledButton onClick={handleCurrentQuestion} style={{ margin: '0 auto' }}>Next Question</StyledButton>
                             </div>
                         )}
 
-                        <Grow in={checked}
-                            {...(checked ? { timeout: 1500 } : {})}>
-                            <div>{displayFinalResults && <div>Final Results!</div>}</div>
-                        </Grow>
-
-                        {displayFinalResults && (
-                            <div style={{ paddingTop: '15.5rem', textAlign: 'center' }}> {/* Adjust paddingTop to lower the button */}
-                            <div style={{ marginBottom: '15vh' }}><StyledButton onClick={handleRetakeTest}
-                             // Adjust marginBottom to lower the button
-                            >Retake Test
-                            </StyledButton></div>
-                            </div>
-                        )}
+                        {displayFinalResults && <div>Final Results!</div>}
 
                         {}
                         {displayFinishButton && !displayFinalResults && (
@@ -367,12 +270,13 @@ export function DetailedQuestionsPage(): JSX.Element {
                             <StyledButton2 color='success' onClick={handleDisplayFinalResults} style={{ margin: '0 auto' }}>Finish & Get Results</StyledButton2>
                             </div>
                         )}
+
+                        <p></p>
                         </Typography>
                     </CardContent>
                 </Card>
                 <p></p>
             </div>  
-            </main>
         </div>
     );
 }
