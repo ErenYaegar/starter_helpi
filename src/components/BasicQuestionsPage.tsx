@@ -26,7 +26,7 @@ export function BasicQuestionsPage(): JSX.Element {
 
   const questions = [
     {
-        questionText: 'How do you prefer to spend your spare time?',
+        questionText: 'How do you prefer to spend your spare time??',
         answerOptions: [
             { answerText: 'Reading books or articles 📚' },
             { answerText: 'Exploring nature or traveling 🌲' },
