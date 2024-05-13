@@ -59,15 +59,15 @@ All files                   |       0 |        0 |       0 |       0 |
   index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
   reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
  src/components             |       0 |        0 |       0 |       0 |                   
-  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 13-225            
+  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 13-234            
   Buttons.tsx               |       0 |        0 |       0 |       0 | 33-57             
   ContactUs.tsx             |       0 |        0 |       0 |       0 | 6-38              
-  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 14-206            
+  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 14-218            
   Home.tsx                  |       0 |        0 |       0 |       0 | 13-81             
   ProgressBar.tsx           |       0 |      100 |       0 |       0 | 4                 
 ----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       0 total
 Snapshots:   0 total
-Time:        3.512 s
+Time:        3.429 s
 Ran all test suites.
