@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/starter_helpi/static/css/main.21ffe60a.css",
-    "main.js": "/starter_helpi/static/js/main.1f4368f2.js",
+    "main.css": "/starter_helpi/static/css/main.9a8bc23a.css",
+    "main.js": "/starter_helpi/static/js/main.66ccfa06.js",
     "static/js/453.dda23872.chunk.js": "/starter_helpi/static/js/453.dda23872.chunk.js",
-    "static/media/CareerFinder.png": "/starter_helpi/static/media/CareerFinder.f50486c2a8102f75e384.png",
     "index.html": "/starter_helpi/index.html",
-    "main.21ffe60a.css.map": "/starter_helpi/static/css/main.21ffe60a.css.map",
-    "main.1f4368f2.js.map": "/starter_helpi/static/js/main.1f4368f2.js.map",
+    "main.9a8bc23a.css.map": "/starter_helpi/static/css/main.9a8bc23a.css.map",
+    "main.66ccfa06.js.map": "/starter_helpi/static/js/main.66ccfa06.js.map",
     "453.dda23872.chunk.js.map": "/starter_helpi/static/js/453.dda23872.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21ffe60a.css",
-    "static/js/main.1f4368f2.js"
+    "static/css/main.9a8bc23a.css",
+    "static/js/main.66ccfa06.js"
   ]
 }

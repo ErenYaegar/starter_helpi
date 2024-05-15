@@ -33,13 +33,13 @@ FAIL src/App.test.tsx
 
     SyntaxError: Cannot use import statement outside a module
 
-    [0m [90m 2 |[39m [36mimport[39m { [33mContainer[39m[33m,[39m [33mNav[39m[33m,[39m [33mNavbar[39m[33m,[39m [33mProgressBar[39m } [36mfrom[39m [32m'react-bootstrap'[39m[33m;[39m
+    [0m [90m 2 |[39m [36mimport[39m { [33mProgressBar[39m } [36mfrom[39m [32m'react-bootstrap'[39m[33m;[39m
      [90m 3 |[39m [36mimport[39m { [33mNavigate[39m } [36mfrom[39m [32m'react-router-dom'[39m[33m;[39m
     [31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m
      [90m   |[39m [31m[1m^[22m[39m
-     [90m 5 |[39m [36mimport[39m [33mButton[39m [36mfrom[39m [32m'@mui/joy/Button'[39m[33m;[39m
-     [90m 6 |[39m [36mimport[39m [33mCard[39m [36mfrom[39m [32m'@mui/joy/Card'[39m[33m;[39m
-     [90m 7 |[39m [36mimport[39m [33mCardContent[39m [36mfrom[39m [32m'@mui/joy/CardContent'[39m[33m;[39m[0m
+     [90m 5 |[39m [36mimport[39m [33mCard[39m [36mfrom[39m [32m'@mui/joy/Card'[39m[33m;[39m
+     [90m 6 |[39m [36mimport[39m [33mCardContent[39m [36mfrom[39m [32m'@mui/joy/CardContent'[39m[33m;[39m
+     [90m 7 |[39m [36mimport[39m { styled } [36mfrom[39m [32m'@mui/material/styles'[39m[33m;[39m[0m
 
       at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
       at Object.<anonymous> (src/components/BasicQuestionsPage.tsx:4:1)
@@ -59,15 +59,15 @@ All files                   |       0 |        0 |       0 |       0 |
   index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
   reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
  src/components             |       0 |        0 |       0 |       0 |                   
-  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 13-241            
-  Buttons.tsx               |       0 |        0 |       0 |       0 | 33-57             
+  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 24-366            
+  Buttons.tsx               |       0 |        0 |       0 |       0 | 51-195            
   ContactUs.tsx             |       0 |        0 |       0 |       0 | 6-38              
-  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 15-241            
+  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 29-368            
   Home.tsx                  |       0 |        0 |       0 |       0 | 13-81             
   ProgressBar.tsx           |       0 |      100 |       0 |       0 | 4                 
 ----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       0 total
 Snapshots:   0 total
-Time:        3.489 s
+Time:        4.025 s
 Ran all test suites.
