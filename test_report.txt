@@ -62,12 +62,12 @@ All files                   |       0 |        0 |       0 |       0 |
   BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 24-366            
   Buttons.tsx               |       0 |        0 |       0 |       0 | 51-195            
   ContactUs.tsx             |       0 |        0 |       0 |       0 | 6-38              
-  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 29-368            
-  Home.tsx                  |       0 |        0 |       0 |       0 | 13-81             
+  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 29-384            
+  Home.tsx                  |       0 |        0 |       0 |       0 | 14-85             
   ProgressBar.tsx           |       0 |      100 |       0 |       0 | 4                 
 ----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       0 total
 Snapshots:   0 total
-Time:        4.025 s
+Time:        3.785 s
 Ran all test suites.
