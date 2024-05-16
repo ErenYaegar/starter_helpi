@@ -3,71 +3,207 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ● Test suite failed to run
+  ✕ renders learn react link (87 ms)
 
-    Jest encountered an unexpected token
+  ● renders learn react link
 
-    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+    TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
 
-    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"App"[39m
+        [36m>[39m
+          [36m<div>[39m
+            [36m<nav[39m
+              [33mclass[39m=[32m"bg-body-tertiary navbar navbar-expand-lg navbar-light"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"container"[39m
+              [36m>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"navbar-brand"[39m
+                [36m>[39m
+                  [0mCareerFinder4U[0m
+                [36m</span>[39m
+                [36m<button[39m
+                  [33maria-controls[39m=[32m"basic-navbar-nav"[39m
+                  [33maria-label[39m=[32m"Toggle navigation"[39m
+                  [33mclass[39m=[32m"navbar-toggler collapsed"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"navbar-toggler-icon"[39m
+                  [36m/>[39m
+                [36m</button>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"navbar-collapse collapse"[39m
+                  [33mid[39m=[32m"basic-navbar-nav"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"me-auto navbar-nav"[39m
+                  [36m>[39m
+                    [36m<a[39m
+                      [33mclass[39m=[32m"nav-link"[39m
+                      [33mhref[39m=[32m"#"[39m
+                      [33mrole[39m=[32m"button"[39m
+                      [33mtabindex[39m=[32m"0"[39m
+                    [36m>[39m
+                      [0mBasic Questions Page[0m
+                    [36m</a>[39m
+                    [36m<a[39m
+                      [33mclass[39m=[32m"nav-link"[39m
+                      [33mhref[39m=[32m"#"[39m
+                      [33mrole[39m=[32m"button"[39m
+                      [33mtabindex[39m=[32m"0"[39m
+                    [36m>[39m
+                      [0mDetailed Questions Page[0m
+                    [36m</a>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"nav-item dropdown"[39m
+                    [36m>[39m
+                      [36m<a[39m
+                        [33maria-expanded[39m=[32m"false"[39m
+                        [33mclass[39m=[32m"dropdown-toggle nav-link"[39m
+                        [33mhref[39m=[32m"#"[39m
+                        [33mid[39m=[32m"basic-nav-dropdown"[39m
+                        [33mrole[39m=[32m"button"[39m
+                        [33mtabindex[39m=[32m"0"[39m
+                      [36m>[39m
+                        [0mDropdown[0m
+                      [36m</a>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</nav>[39m
+            [36m<p />[39m
+            [36m<h1[39m
+              [33mclass[39m=[32m"padding3"[39m
+            [36m>[39m
+              [0mHome Page[0m
+            [36m</h1>[39m
+            [36m<p />[39m
+            [36m<main[39m
+              [33mclass[39m=[32m"padding2"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"box"[39m
+              [36m>[39m
+                [36m<p />[39m
+                [36m<h3>[39m
+                  [0mBasic Questions Page[0m
+                [36m</h3>[39m
+                [36m<p />[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"padding"[39m
+                [36m>[39m
+                  [0mThe basic questions page is designed to provide concise and straightforward answers to common inquiries about your career. Dive in to find quick insights about your interests and career.[0m
+                [36m</p>[39m
+                [36m<p />[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-gs6if9-JoyButton-root"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mBASIC QUESTIONS PAGE[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"box"[39m
+              [36m>[39m
+                [36m<p />[39m
+                [36m<h3>[39m
+                  [0mDetailed Questions Page[0m
+                [36m</h3>[39m
+                [36m<p />[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"padding"[39m
+                [36m>[39m
+                  [0mThe detailed questions page offers in-depth explanations to questions you have about your career pathway. Each response is  crafted to provide thorough explanations.[0m
+                [36m</p>[39m
+                [36m<p />[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"MuiButton-root MuiButton-variantSolid MuiButton-colorPrimary MuiButton-sizeMd css-gs6if9-JoyButton-root"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mDETAILED QUESTIONS PAGE[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</main>[39m
+          [36m</div>[39m
+          [36m<form[39m
+            [33mclass[39m=[32m""[39m
+          [36m>[39m
+            [36m<label[39m
+              [33mclass[39m=[32m"form-label"[39m
+            [36m>[39m
+              [0mAPI Key:[0m
+            [36m</label>[39m
+            [36m<input[39m
+              [33mclass[39m=[32m"form-control"[39m
+              [33mplaceholder[39m=[32m"Insert API Key Here"[39m
+              [33mtype[39m=[32m"password"[39m
+            [36m/>[39m
+            [36m<br />[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"Submit-Button btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSubmit[0m
+            [36m</button>[39m
+          [36m</form>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
 
-    By default "node_modules" folder is ignored by transformers.
+    [0m [90m  5 |[39m test([32m'renders learn react link'[39m[33m,[39m () [33m=>[39m {
+     [90m  6 |[39m   render([33m<[39m[33mApp[39m [33m/[39m[33m>[39m)[33m;[39m
+    [31m[1m>[22m[39m[90m  7 |[39m   [36mconst[39m linkElement [33m=[39m screen[33m.[39mgetByText([35m/learn react/i[39m)[33m;[39m
+     [90m    |[39m                              [31m[1m^[22m[39m
+     [90m  8 |[39m   expect(linkElement)[33m.[39mtoBeInTheDocument()[33m;[39m
+     [90m  9 |[39m })[33m;[39m
+     [90m 10 |[39m[0m
 
-    Here's what you can do:
-     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
-     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
-     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
-     • If you need a custom transformation specify a "transform" option in your config.
-     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
-
-    You'll find more details and examples of these config options in the docs:
-    https://jestjs.io/docs/configuration
-    For information about custom transformations, see:
-    https://jestjs.io/docs/code-transformation
-
-    Details:
-
-    /home/runner/work/starter_helpi/starter_helpi/node_modules/axios/index.js:1
-    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,jest){import axios from './lib/axios.js';
-                                                                                      ^^^^^^
-
-    SyntaxError: Cannot use import statement outside a module
-
-    [0m [90m 2 |[39m [36mimport[39m { [33mProgressBar[39m } [36mfrom[39m [32m'react-bootstrap'[39m[33m;[39m
-     [90m 3 |[39m [36mimport[39m { [33mNavigate[39m } [36mfrom[39m [32m'react-router-dom'[39m[33m;[39m
-    [31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m axios [36mfrom[39m [32m'axios'[39m[33m;[39m
-     [90m   |[39m [31m[1m^[22m[39m
-     [90m 5 |[39m [36mimport[39m [33mCard[39m [36mfrom[39m [32m'@mui/joy/Card'[39m[33m;[39m
-     [90m 6 |[39m [36mimport[39m [33mCardContent[39m [36mfrom[39m [32m'@mui/joy/CardContent'[39m[33m;[39m
-     [90m 7 |[39m [36mimport[39m { styled } [36mfrom[39m [32m'@mui/material/styles'[39m[33m;[39m[0m
-
-      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1728:14)
-      at Object.<anonymous> (src/components/BasicQuestionsPage.tsx:4:1)
-      at Object.<anonymous> (src/App.tsx:7:1)
-      at Object.<anonymous> (src/App.test.tsx:3:1)
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/App.test.tsx:7:30)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
+[0;33mOne of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
+
+babel-preset-react-app is part of the create-react-app project, [1mwhich
+is not maintianed anymore[0;33m. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.[0m
+  
 ----------------------------|---------|----------|---------|---------|-------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------|---------|----------|---------|---------|-------------------
-All files                   |       0 |        0 |       0 |       0 |                   
- src                        |       0 |        0 |       0 |       0 |                   
-  App.tsx                   |       0 |        0 |       0 |       0 | 13-38             
+All files                   |   12.08 |     6.41 |   10.81 |   12.08 |                   
+ src                        |   28.57 |    16.66 |      20 |   28.57 |                   
+  App.tsx                   |      60 |       50 |   33.33 |      60 | 16,24-30          
   index.tsx                 |       0 |      100 |     100 |       0 | 8-19              
   reportWebVitals.ts        |       0 |        0 |       0 |       0 | 3-10              
- src/components             |       0 |        0 |       0 |       0 |                   
-  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 24-366            
-  Buttons.tsx               |       0 |        0 |       0 |       0 | 51-195            
-  ContactUs.tsx             |       0 |        0 |       0 |       0 | 6-38              
-  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 29-385            
-  Home.tsx                  |       0 |        0 |       0 |       0 | 14-85             
+ src/components             |    9.37 |     5.55 |    9.37 |    9.37 |                   
+  BasicQuestionsPage.tsx    |       0 |        0 |       0 |       0 | 20-166            
+  Buttons.tsx               |   55.55 |       50 |   33.33 |   55.55 | 38,42,56-57       
+  DetailedQuestionsPage.tsx |       0 |        0 |       0 |       0 | 20-203            
+  Home.tsx                  |   63.63 |       50 |      50 |   63.63 | 33,37,60-77       
   ProgressBar.tsx           |       0 |      100 |       0 |       0 | 4                 
 ----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
-Tests:       0 total
+Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.824 s
+Time:        3.755 s
 Ran all test suites.
