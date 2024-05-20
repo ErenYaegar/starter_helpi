@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/starter_helpi/static/css/main.e3038408.css",
-    "main.js": "/starter_helpi/static/js/main.f0a71cce.js",
+    "main.js": "/starter_helpi/static/js/main.b5594dc9.js",
     "static/js/453.dda23872.chunk.js": "/starter_helpi/static/js/453.dda23872.chunk.js",
     "static/media/city.jpeg": "/starter_helpi/static/media/city.b407fcfee9af7a286dfc.jpeg",
     "static/media/cab.gif": "/starter_helpi/static/media/cab.cd0f61d700c1e890d00d.gif",
     "static/media/CareerFinder.png": "/starter_helpi/static/media/CareerFinder.f50486c2a8102f75e384.png",
     "index.html": "/starter_helpi/index.html",
     "main.e3038408.css.map": "/starter_helpi/static/css/main.e3038408.css.map",
-    "main.f0a71cce.js.map": "/starter_helpi/static/js/main.f0a71cce.js.map",
+    "main.b5594dc9.js.map": "/starter_helpi/static/js/main.b5594dc9.js.map",
     "453.dda23872.chunk.js.map": "/starter_helpi/static/js/453.dda23872.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3038408.css",
-    "static/js/main.f0a71cce.js"
+    "static/js/main.b5594dc9.js"
   ]
 }
